@@ -1,0 +1,72 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #fd07c0;">
+  <!--<nav class="navbar" style="background-color: #fd07c0;">-->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="labelPetshop">PetShop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#" (click)="mostrarCadastros()">Mostrar animais</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--Painel de adição de animal-->
+<div id="painel">
+  <form #addForm="ngForm" (ngSubmit)="onAddAnimal(addForm)">
+    <div>
+      <label>Nome:</label>
+      <input class="form-control form-control-sm" type="text" placeholder="Nome" aria-label=".form-control-sm example"
+        name="nome" id="nomeAnimal" ngModel name="nome">
+    </div>
+    <div>
+      <label>Espécie:</label>
+      <input class="form-control form-control-sm" type="text" placeholder="Espécie"
+        aria-label=".form-control-sm example" id="especieAnimal" ngModel name="especie" name="especie">
+    </div>
+    <div>
+      <label>Raça:</label>
+      <input class="form-control form-control-sm" type="text" placeholder="Raça" aria-label=".form-control-sm example"
+        name="raca" id="racaAnimal" ngModel name="raca">
+    </div>
+    <div>
+      <label>Altura:</label>
+      <input class="form-control form-control-sm" type="text" placeholder="Altura" aria-label=".form-control-sm example"
+        name="altura" id="alturaAnimal" ngModel name="altura">
+    </div>
+    <div>
+      <label>Peso:</label>
+      <input class="form-control form-control-sm" type="text" placeholder="Peso" aria-label=".form-control-sm example"
+        name="peso" id="pesoAnimal" ngModel name="peso">
+    </div>
+    <div>
+      <label>Pelagem/Plumagem:</label>
+      <input class="form-control form-control-sm" type="text" placeholder="Pelagem/Plumagem"
+        aria-label=".form-control-sm example" name="tipoPelagemPlumagem" id="tipoPelagemPlumagem" ngModel
+        name="tipoPelagemPlumagem">
+    </div>
+    <div id="divTipoTratamento">
+      <label>Tipo tratamento:</label>
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="tipoTratamento"
+        id="tipoTratamento" ngModel name="tipoTratamento">
+        <option value="AtendimentoVeterinario">AtendimentoVeterinario</option>
+        <option value="Banho">Banho</option>
+        <option value="Tosa">Tosa</option>
+      </select>
+    </div>
+    <button [disabled]="addForm.invalid" type="submit" class="btn btn-danger">Salvar</button>
+  </form>
+</div>
+<div id="botoes">
+  <button id="deleteAnimal" (click)="deletarAnimal()" class="btn btn-danger">Deletar</button>
+  <button id="atualizarAnimal" (click)="atualizarAnimal()" class="btn btn-danger">Atualizar</button>
+</div>
+<div id="cadastros">
+
+</div>
