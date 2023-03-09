@@ -1,0 +1,9 @@
+tsc --init  \\Cria o arquivo tsconfig.json
+
+tsc src\index.ts \\compila o arquivo.ts para javascript
+
+ng
+
+ng new .ng //cria a estrutura do angular. 
+
+ng generate environments

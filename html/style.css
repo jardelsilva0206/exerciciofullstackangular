@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: url(indice.jpg); /* .. volta um nível da pasta*/
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background:red;
+    background: rgba(100,100,255,0.5);
+}

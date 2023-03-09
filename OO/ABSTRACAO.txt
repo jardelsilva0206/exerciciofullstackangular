@@ -1,0 +1,22 @@
+- Processador
+- QtdMemoriaRam
+- CapacidadeArmazenamento
+- Sistema operacional
+- QtdPortas USB
+- TipoSaidaDeVideo
+- TipoTeclado
+- TamanhoMonitor
+- Fabricante
+- PossuiLeitorCartao
+- PossuiLeitorDeDVD
+- FonteCarregador
+- PossuiTouchPad
+- ModeloPlacaVideo
+- ModelePlacaWIFI
+
+LIGAR()
+DESLIGAR()
+INICIARECLIPSE()
+INICIARNAVEGADOR()
+ATUALIZARWINDOWS()
+ACESSARYOUTUBE()

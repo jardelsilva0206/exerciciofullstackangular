@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+</head>
+
+<body>
+    <form>
+<h1>Currículo</h1>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required>
+            
+            <label for="CPF">CPF</label>
+            <input type="text" name="cpf" required>
+            
+            <label for="RG">RG</label>
+            <input type="text" name="rg">
+            
+            <label for="dataNascimento">Data de nascimento</label>
+            <input type="date" name="dataNascimento" required>
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados de contato</legend>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" required>
+            
+            <label for="celular">Celular</label>
+            <input type="tel" name="celular">
+            
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required>
+            <br><br>
+            <label for="linkedin">Linkedin</label>
+            <input type="url" name="linkedin">
+            
+            <label for="instagram">Instagram</label>
+            <input type="url" name="instagram">
+            
+            <label for="portfolio">Portfolio</label>
+            <input type="url" name="portfolio">
+
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="logradouro">Logradouro</label>
+            <input type="text" name="logradouro" required>
+            
+            <label for="numero">Número</label>
+            <input type="number" name="numero" required>
+            
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento">
+            <br><br>
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" required>
+            
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" required>
+            
+            <label for="estado">Estado</label>
+            <select name="estado" required>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Experiências profissionais</legend>
+            <label for="empresa">Empresa</label>
+            <input type="text" name="empresa">
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefoneEmpresa">
+            
+            <label for="cidadeEmpresa">Cidade</label>
+            <input type="text" name="cidadeEmpresa">
+            <label for="estadoEmpresa">Estado</label>
+            <select name="estadoEmpresa">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <br><br>
+            <label for="admissao">Admissão</label>
+            <input type="date" name="admissao">
+            
+            <label for="demissao">Demissão</label>
+            <input type="date" name="demissao">
+            
+            <label for="funcao">Função</label>
+            <input type="text" name="funcao">
+            
+            <label for="salario">Salário</label>
+            <input type="number" name="salario">
+            <br><br><br>
+            <button>Adicionar empresa</button>
+
+        </fieldset>
+        <fieldset>
+            <legend>Cursos</legend>
+            <label for="curso">Curso</label>
+            <input type="text" name="curso">
+            <br><br>
+            <label for="instituicao">Instituição</label>
+            <input type="text" name="instituicao">
+            <br><br>
+            <label for="dataInicialCurso">Data inicial</label>
+            <input type="date" name="dataInicialCurso">
+            
+            <label for="dataFinalCurso">Data final</label>
+            <input type="date" name="dataFinalCurso">
+            <br><br>
+            <input type="file" name="arquivoCurso">
+
+            </fieldset>
+            <fieldset>
+                <legend>Formação</legend>
+            <label for="cursoFormacao">Curso</label>
+            <input type="text" name="cursoFormacao">
+            <br><br>
+            <label for="instituicaoFormacao">Instituição</label>
+            <input type="text" name="instituicaoFormacao">
+            <label for="situacaoFormacao">Situação</label>
+            <input type="text" name="situacaoFormacao">
+            <br><br>
+            <label for="dataInicialCurso">Data inicial</label>
+            <input type="date" name="dataInicialCurso">
+            <label for="dataFinalCurso">Data final</label>
+            <input type="date" name="dataFinalCurso">
+            <br><br>    
+            <input type="file" name="arquivoCurso">
+            <br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Outras informações</legend>
+        <textarea>
+        </textarea>
+        <br><br>
+                    </fieldset>
+    </form>
+    <button type="submit" name="enviaInfo">Salvar informações</button>
+</body>
+
+</html>
